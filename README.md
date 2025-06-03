@@ -38,35 +38,6 @@ MedCareBot/
 └── README.md # This file
 
 
----
-
-
-## ⚙️ Installation
-
-### 🔧 Prerequisites:
-- Python 3.8+
-- pip
-
-### 📦 Setup Instructions:
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/MedCareBot.git
-cd MedCareBot
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Add your PDFs to the /data folder
-
-# Ingest and embed documents
-python ingest.py
-
-# Run the chatbot
-streamlit run app.py
-
----
-
 
 
 🛠️ Tech Stack
