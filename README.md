@@ -1,5 +1,3 @@
-# AI-medicobot
-
 # 🩺 MedCareBot — AI Medical Chatbot with RAG, Hugging Face & LangChain
 
 **MedCareBot** is an AI-powered medical chatbot that uses Retrieval-Augmented Generation (RAG) to answer disease-related queries based on trusted medical documents. It combines cutting-edge technologies like Hugging Face Transformers, LangChain, and semantic search to support healthcare professionals and patients with quick, contextual information — all wrapped in a clean Streamlit interface.
@@ -27,69 +25,113 @@
 
 ## 📁 Project Structure
 
----
+```
 MedCareBot/
 │
-├── data/ # Folder for storing PDF knowledge base
-├── embeddings/ # Stores vector database files
-├── app.py # Streamlit frontend
-├── ingest.py # PDF loading, chunking & embedding
-├── config.py # Model and system settings
-├── requirements.txt # Python dependencies
-└── README.md # This file
+├── data/                   # Folder for storing PDF knowledge base
+├── embeddings/             # Stores vector database files
+├── app.py                  # Streamlit frontend
+├── ingest.py               # PDF loading, chunking & embedding
+├── config.py               # Model and system settings
+├── requirements.txt        # Python dependencies
+└── README.md               # This file
+```
+
 ---
 
+## ⚙️ Installation
 
+### 🔧 Prerequisites:
+- Python 3.8+
+- pip
 
-🛠️ Tech Stack
-Tech	Role
-🧠 Hugging Face	Transformer-based language models
-🧱 FAISS	Vector search for semantic retrieval
-🔗 LangChain	Orchestrating LLM + retrieval logic
-📄 PyMuPDF	PDF reading and chunking
-🌐 Streamlit	Interactive frontend for the chatbot
-🗃️ Chroma/FAISS	Vector database backend
+### 📦 Setup Instructions:
 
-🎛️ Customization
-Add your own PDFs to data/ and rerun ingest.py to expand the knowledge base.
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/MedCareBot.git
+cd MedCareBot
 
-Tune response behavior with temperature, top_k, or chunk_size in config.py.
+# Install dependencies
+pip install -r requirements.txt
 
-🧪 Example Use Cases
-Clinical query resolution (e.g., "What are the symptoms of dengue?")
+# Add your PDFs to the /data folder
 
-Medical research assistant for students or professionals
+# Ingest and embed documents
+python ingest.py
 
-Rapid disease information during teleconsultation
+# Run the chatbot
+streamlit run app.py
+```
 
-🤖 Demo Preview
-Coming soon: [Live Demo Link] or add your own screenshots/gif here.
+---
 
-🧬 Future Enhancements
-🏥 Integration with real-time medical APIs (e.g., WHO, CDC)
+## 🛠️ Tech Stack
 
-🧑‍⚕️ Doctor-mode with advanced query handling
+| Tech             | Role                                 |
+| ---------------- | ------------------------------------ |
+| 🧠 Hugging Face  | Transformer-based language models    |
+| 🧱 FAISS         | Vector search for semantic retrieval |
+| 🔗 LangChain     | Orchestrating LLM + retrieval logic  |
+| 📄 PyMuPDF       | PDF reading and chunking             |
+| 🌐 Streamlit     | Interactive frontend for the chatbot |
+| 🗃️ Chroma/FAISS | Vector database backend              |
 
-🗣️ Speech-to-text interaction
+---
 
-📈 Chat history & feedback logging
+## 🎛️ Customization
 
-📄 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+* **Add your own PDFs** to `data/` and rerun `ingest.py` to expand the knowledge base.
+* Tune response behavior with `temperature`, `top_k`, or `chunk_size` in `config.py`.
 
-🙌 Acknowledgements
-Monica's Tutorial
+---
 
-Hugging Face
+## 🧪 Example Use Cases
 
-LangChain
+* Clinical query resolution (e.g., "What are the symptoms of dengue?")
+* Medical research assistant for students or professionals
+* Rapid disease information during teleconsultation
 
-Streamlit
+---
 
-PyMuPDF
+## 🤖 Demo Preview
 
-FAISS
+> Coming soon: [Live Demo Link] or add your own screenshots/gif here.
 
+---
 
+## 🧬 Future Enhancements
 
-💡 MedCareBot — Empowering better decisions through AI-driven medical insights.
+* 🏥 Integration with real-time medical APIs (e.g., WHO, CDC)
+* 🧑‍⚕️ Doctor-mode with advanced query handling
+* 🗣️ Speech-to-text interaction
+* 📈 Chat history & feedback logging
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgements
+
+* [Monica's Tutorial](https://www.youtube.com/watch?v=OP0FYjF-37c)
+* [Hugging Face](https://huggingface.co/)
+* [LangChain](https://www.langchain.com/)
+* [Streamlit](https://streamlit.io/)
+* [PyMuPDF](https://pymupdf.readthedocs.io/)
+* [FAISS](https://github.com/facebookresearch/faiss)
+
+---
+
+## 📬 Contact
+
+For feedback or collaboration:
+📧 [your.email@example.com](mailto:your.email@example.com)
+🔗 [LinkedIn](https://www.linkedin.com)
+
+---
+
+> 💡 *MedCareBot — Empowering better decisions through AI-driven medical insights.*
