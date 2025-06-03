@@ -27,6 +27,7 @@
 
 ## 📁 Project Structure
 
+---
 MedCareBot/
 │
 ├── data/ # Folder for storing PDF knowledge base
@@ -36,7 +37,7 @@ MedCareBot/
 ├── config.py # Model and system settings
 ├── requirements.txt # Python dependencies
 └── README.md # This file
-
+---
 
 
 
